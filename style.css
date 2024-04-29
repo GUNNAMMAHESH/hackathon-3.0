@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    background-color: rgb(19, 19, 19);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.search {
+    width: 700px;
+    display: flex;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+
+#errorMessage{
+    display: flex;
+    justify-content: center;
+    color:tomato;
+}
+
+#audioContainer {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+    width: 28%;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 2px;
+
+}
+
+#audioContainer img {
+    width: 37%;
+    mix-blend-mode: multiply;
+    margin-left: 2px;
+    align-items: start;
+
+}
+
+#audioContainer:hover {
+    color: red;
+    opacity: 0.8;
+    background-color: white;
+}
+
+input {
+    width: 70%;
+    padding: 16px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    background-color: #46464670;
+}
+
+input:focus {
+    outline: white solid 2px;
+    box-shadow: 1px 1px 6px white;
+    border: none;   
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    width: 25%;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    color: red;
+    opacity: 0.8;
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.container {
+    color: white;
+    width: 700px;
+    margin: 60px auto;
+    display: flex;
+    gap: 30px;
+}
+#defination1,#defination2,#phonetic,#partOfSpeech,#synonyms,#antonyms{
+    margin-left: 7px;
+    color: tomato;
+}
+
+
+@media only screen and (max-width: 412px) {
+    .search{
+      flex-wrap: wrap;
+      margin-left: 15px;
+      gap: 14px;
+      
+    }
+    .btn{
+        width: 30%;
+        padding: 12px;
+        margin-left: 105px;
+    }
+    .container{
+        margin-left: 12px;
+        font-size: 20px;
+    }
+    #word{
+        width: 90%;
+    }
+    #errorMessage{
+        margin-left: 17%;
+        width: 100%;
+    }
+  }
