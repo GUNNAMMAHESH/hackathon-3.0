@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dictionary</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
-</head>
-
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
     <div class="search">
-        <input type="text" id="word" placeholder="Search any word ..." required>
-        <button class="btn" onclick="search()">Search here...</button>
+      <input type="text" id="word" placeholder="Search any word ..." required />
+      <button class="btn" onclick="search()">Search here...</button>
     </div>
     <h1 id="errorMessage"></h1>
 
     <div class="container">
-        <div>
-            <button id="audioContainer">Listen<img src="./images/hear.png"><span id="audioNotFound"></span></button>
-            <h2> Defination 1:<span id="defination1"></h2>
-            <h2> Defination 2:<span id="defination2"></h2>
-            <p>Phonetic:<span id="phonetic"></span></p>
-            <p>Part of Speech: <span id="partOfSpeech"></span></p>
-            <p>synonyms: <span id="synonyms"></span></p>
-            <p>antonyms: <span id="antonyms"></span></p>
-           
-        </div>
-        <img id="imageContainer" src="" alt="">
-
+      <div>
+        <button id="audioContainer">
+          <p>Listen</p>
+          <img src="./images/hear.png" alt="Listen" />
+          <span id="audioNotFound"></span>
+        </button>
+        <h2>
+          Defination 1:
+          <span id="defination1"></span>
+        </h2>
+        <h2>
+          Defination 2:
+          <span id="defination2"></span>
+        </h2>
+        <p>Phonetic: <span id="phonetic"></span></p>
+        <p>Part of Speech: <span id="partOfSpeech"></span></p>
+        <p>Synonyms: <span id="synonyms"></span></p>
+        <p>Antonyms: <span id="antonyms"></span></p>
+      </div>
+      <img id="imageContainer" src="" alt="" />
     </div>
-
-
-
-</body>
-
+  </body>
 </html>
